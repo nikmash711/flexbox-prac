@@ -1,0 +1,107 @@
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+
+main{
+  background-color:black;
+  /* padding:250px 50px; */
+  color: white;
+  text-align: center;
+  min-height:700px;
+  display:flex;
+}
+
+nav{
+  background-color: rgb(62, 6, 6);
+  position: fixed;
+  width:100%;
+}
+
+nav a{
+  padding:20px;
+  display: block;
+}
+
+.icon.right{
+  float:right;
+}
+
+.link, .logo{
+  color: white;
+  text-decoration: none;
+  padding: 20px;
+  text-align: center;
+  /* position:relative; */
+}
+
+.logo{
+  text-align:left;
+  display: inline-block;
+}
+
+.link:hover {
+  color: #333;
+  background-color: #fff;
+}
+
+.link{
+  display:none;
+}
+
+.paw-logo{
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 90px;
+  top: 17px;
+}
+
+.icon{
+  color:white;
+  display:inline;
+}
+
+section{
+  width: 300px;
+  margin:auto;
+}
+
+/* h1{
+  margin:auto;
+} */
+
+.brief{
+  flex:1;
+  border-radius: 50px;
+  background-color:rgb(62, 6, 6);
+  padding:20px;
+  margin:20px;
+}
+
+@media screen and (min-width: 700px){
+  nav a{
+    display: inline-block;
+  }
+
+  .link{
+    display: inline-block;
+  }
+
+  .right{
+    float:right;
+  }
+
+  .icon{
+    display:none;
+  }
+
+  section{
+    width: 700px;
+  }
+
+  .section{
+    display:flex;
+  }
+}
